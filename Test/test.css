@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.timeline {
+    width: 800px;
+    background-color: #f3f3f3;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.event {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.event:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.event p {
+    margin-bottom: 0;
+    color: #666;
+}

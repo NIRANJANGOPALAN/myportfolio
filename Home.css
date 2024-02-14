@@ -1,37 +1,98 @@
 .name {
-    text-align: center;
+  text-align: center;
+  color: white;
 }
 
-.sub-menu-parent { position: relative; }
+.sub-menu-parent {
+  position: relative;
+}
+.NavBar {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  align-items: center;
+}
 .sub-menu-parent:focus .sub-menu,
 .sub-menu-parent:focus-within .sub-menu,
 .sub-menu-parent:hover .sub-menu {
-  visibility: visible; /* shows sub-menu */
+  visibility: visible;
+  /* shows sub-menu */
   opacity: 1;
   z-index: 1;
   transform: translateY(0%);
-  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+  transition-delay: 0s, 0s, 0.3s;
+  /* this removes the transition delay so the menu will be visible while the other styles transition */
 }
 
 /* presentational */
-body { padding: 2%; font: 18px/1.4 sans-serif; }
+body {
+  background-color: darkblue;
+  color: white;
+  padding: 2%;
+  font: 18px/1.4 sans-serif;
+}
 
-nav a { color: #E00; display: block; padding: 0.5em 1em; text-decoration: none; }
-nav a:hover { color: #F55; }
+.myjourney{
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content1 {
+  text-align: center;
+    font-size: 36px;
+    color: #333;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    
+}
+
+.content1:hover {
+  color: #E00;
+}
+
+nav a {
+  color: #E00;
+  display: block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #F55;
+}
+
 nav ul,
-nav ul li { list-style-type: none; padding: 0; margin: 0; }
+nav ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
-nav > ul { background: #EEE; text-align: center; }
-nav > ul > li { display: inline-block; border-left: solid 1px #aaa; }
-nav > ul > li:first-child { border-left: none; }
+nav>ul {
+  background: #EEE;
+  text-align: center;
+}
+
+nav>ul>li {
+  display: inline-block;
+  border-left: solid 1px #aaa;
+}
+
+nav>ul>li:first-child {
+  border-left: none;
+}
 
 .sub-menu {
   background: #DDD;
 }
 
 footer {
-    background-color: #777;
-    padding: 10px;
-    text-align: center;
-    color: white;
-  }
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
